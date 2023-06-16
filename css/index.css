@@ -1,0 +1,97 @@
+:root {
+    --pri_pink: #CC8B6E;
+    --pri_rice: #E1CFB7;
+    --pri_green: #B7B4A1;
+    --pri_brown: #41382F;
+    --pri_bg: #F4F0EC;
+    --sub_green: #798778;
+    --sub_brown: #877E6F;
+}
+
+*{
+    color: var(--pri_brown);
+    font-family: 'Noto Serif';
+}
+body{
+    font-size: 62.5%;
+}
+
+.wrapper{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* --------- Default End --------- */
+
+/* header-- */
+header{
+    height: 70px;
+    background-color: var(--pri_rice);
+    margin-bottom: 50px;
+    
+}
+header h1{
+    font-size: 2.4rem;
+    line-height: 70px;
+    font-weight: 700;
+}
+/* header end-- */
+
+/* main-- */
+main .wrapper{
+    display: flex;
+}
+
+/* left */
+.left_input{
+    margin-right: 50px;
+    flex-grow: 1;
+}
+.left_input input{
+    display: block;
+    width: 100%;    
+}
+
+.left_input label{
+    display: block;
+    margin-bottom: 40px;
+}
+.left_input label p{
+    font-size: 1.6rem;
+    font-weight: 600px;
+    margin-bottom: 14px;
+}
+.left_input label input{
+    height: 40px;
+    font-size: 1.6rem;
+    color: var(--sub_brown);
+    border-radius: 5px;
+    border: 1px solid var(--sub_brown);
+}
+.left_input label input:focus{
+    outline: 1px solid var(--pri_brown);
+    
+}
+
+/* right */
+.right_input{
+    position: relative;
+}
+.right_input::after{
+    content: attr(data-input);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    background-color: var(--pri_rice);
+    font-size: 1.6rem;
+
+}
+.color_picker{
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+}
+
