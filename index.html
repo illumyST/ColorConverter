@@ -7,10 +7,24 @@
     <title>ColorConverter</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 
 <body>
-    hi
+    <div id="app">
+        {{text}}
+    </div>
+    <script>
+        const app = {
+            data() {
+                return {
+                    text: 0,
+                }
+            }
+        }
+
+        Vue.createApp(app).mount('#app')
+    </script>
     <script src="./js/index.js"></script>
 </body>
 
