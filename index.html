@@ -18,17 +18,18 @@
     <main>
         <div class="wrapper">
             <div class="left_input">
-                <label>
+                <label class="hex">
                     <p>Hex String</p>
-                    <input type="text">
+                    <input  id="hex" type="text" value="#41382F">
                 </label>
-                <label>
+                <label class="rgb">
                     <p>RGB</p>
-                    <input type="text">
+                    <input  id="rgb" type="text" value="65, 56, 47">
                 </label>
             </div>
-            <div class="right_input" data-input="#FFFFFF">
-                <input class="color_picker" type="color">
+            <div class="right_input">
+                <div class="right_input_showColor">#41382F</div>
+                <input id="cPicker" class="color_picker" type="color" value="#41382F">
             </div>
         </div>
     </main>
